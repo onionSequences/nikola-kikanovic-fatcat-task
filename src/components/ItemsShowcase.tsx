@@ -16,7 +16,7 @@ export const ItemsShowcase = ({ items }: ItemsShowcaseProps) => {
                             alt="checkmark-image"
                         />
                         <div className="text-2xl font-bold">{title}</div>
-                        <p className="">{description}</p>
+                        <p>{description}</p>
                     </div>
                 ))}
             </div>
