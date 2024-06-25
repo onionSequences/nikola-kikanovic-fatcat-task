@@ -1,6 +1,12 @@
 import clsx from 'clsx';
 
-export const Card = ({ title, text, link }) => (
+export type CardItem = {
+    title: string;
+    text: string;
+    link: string;
+};
+
+export const Card = ({ title, text, link }: CardItem) => (
     <div
         className={clsx(
             'flex',

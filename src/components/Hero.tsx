@@ -1,4 +1,8 @@
-export const Hero = ({ title, image }) => {
+import { Item } from '../lib/shared/types';
+
+type HeroProps = Omit<Item, 'description'>;
+
+export const Hero = ({ title, image }: HeroProps) => {
     return (
         <div className="flex row justify-center items-center gap-4 h-screen">
             <div className="w-4/12">
