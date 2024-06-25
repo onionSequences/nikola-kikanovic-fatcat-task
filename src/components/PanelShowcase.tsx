@@ -30,7 +30,7 @@ export const PanelShowcase = ({ items }: PanelShowcaseProps) => {
                             'text-center'
                         )}
                     >
-                        <img src={image} width="50" height="50" alt="Icon" />
+                        <img src={image} width="50" height="50" alt="icon" />
                         <div className={clsx('text-xl', 'font-bold')}>
                             {title}
                         </div>

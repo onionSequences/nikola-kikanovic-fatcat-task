@@ -60,7 +60,7 @@ export const Landing = () => {
                     href={vscodeProjectLink}
                 >
                     <span className={clsx('text-lg')}>Read docs</span>
-                    <img src="/media/landing/arrow.svg" alt="" />
+                    <img src="/media/landing/arrow.svg" alt="arrow-icon" />
                 </a>
             </div>
             <img
@@ -72,7 +72,7 @@ export const Landing = () => {
                     'justify-self-center'
                 )}
                 src="/media/landing/hero.svg"
-                alt=""
+                alt="fatcat-image"
             />
             <div
                 className={clsx(

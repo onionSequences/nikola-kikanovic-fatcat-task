@@ -9,7 +9,12 @@ export const Hero = ({ title, image }: HeroProps) => {
                 <h1 className="text-3xl font-bold">{title}</h1>
             </div>
             <div className="w-4/12">
-                <img src={image} width="100%" alt="Hero" loading="eager" />
+                <img
+                    src={image}
+                    width="100%"
+                    alt="hero-image"
+                    loading="eager"
+                />
             </div>
         </div>
     );

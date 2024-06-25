@@ -13,7 +13,7 @@ export const ItemsShowcase = ({ items }: ItemsShowcaseProps) => {
                         <img
                             src="/media/checkmark.jpg"
                             width={25}
-                            alt="Checkmark"
+                            alt="checkmark-image"
                         />
                         <div className="text-2xl font-bold">{title}</div>
                         <p className="">{description}</p>

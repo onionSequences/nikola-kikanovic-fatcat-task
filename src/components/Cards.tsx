@@ -25,7 +25,7 @@ export const Cards = ({ cards }: CardsProps) => {
                         key={card.title}
                         className={clsx('rounded-md', 'p-8', card.background)}
                     >
-                        <img src={card.image} alt="Icon" width="120" />
+                        <img src={card.image} alt="card-image" width="120" />
                         <div className="my-8">
                             <div
                                 className={clsx(
