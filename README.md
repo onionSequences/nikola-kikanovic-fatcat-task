@@ -1,6 +1,10 @@
 # About
 This project is a test task for the FatCatCoders company.
 
+## Requirements
+-  npm - v9.0.0 or greater
+-  node - v18.0.0 or greater
+
 ## How to run the project
 
 To run the project, follow these steps:
