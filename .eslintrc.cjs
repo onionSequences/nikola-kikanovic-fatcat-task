@@ -5,7 +5,7 @@ const config = {
     root: true,
     env: {
         browser: true,
-        es2020: true
+        es2020: true,
     },
     extends: [
         'eslint:recommended',
@@ -17,7 +17,13 @@ const config = {
         'plugin:prettier/recommended',
         'prettier',
     ],
-    ignorePatterns: ['dist', '.eslintrc.cjs', "postcss.config.js", "tailwind.config.js", "vite.config.ts"],
+    ignorePatterns: [
+        'dist',
+        '.eslintrc.cjs',
+        'postcss.config.js',
+        'tailwind.config.js',
+        'vite.config.ts',
+    ],
     settings: {
         react: {
             version: '18.2',
@@ -48,7 +54,7 @@ const config = {
         ecmaFeatures: {
             jsx: true,
         },
-        project: "./tsconfig.json"
+        project: './tsconfig.json',
     },
     overrides: [
         {

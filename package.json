@@ -12,7 +12,7 @@
         "build": "vite build",
         "lint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
         "format": "prettier --write .",
-        "typecheck": "tsc --showConfig",
+        "typecheck": "tsc --noEmit",
         "preview": "vite preview",
         "prepare": "husky install"
     },
