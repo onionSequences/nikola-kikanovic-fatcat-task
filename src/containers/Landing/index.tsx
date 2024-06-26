@@ -1,4 +1,5 @@
-import { Card } from './components/Card';
+import { Card } from '@homework-task/containers/Landing/components/Card';
+
 import { cards, vscodeProjectLink } from './constants';
 
 export const Landing = () => {

@@ -17,8 +17,20 @@ const config = {
         'plugin:prettier/recommended',
         'prettier',
     ],
-    ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.js'],
-    settings: {react: {version: '18.2'}},
+    ignorePatterns: ['dist', '.eslintrc.cjs', "postcss.config.js", "tailwind.config.js", "vite.config.ts"],
+    settings: {
+        react: {
+            version: '18.2',
+        },
+        'import/parsers': {
+            '@typescript-eslint/parser': ['.ts', '.tsx'],
+        },
+        'import/resolver': {
+            typescript: {
+                project: ['tsconfig.json', './tsconfig.json'],
+            },
+        },
+    },
     parser: '@typescript-eslint/parser',
     plugins: [
         'react-refresh',
@@ -28,14 +40,15 @@ const config = {
         'react-hooks',
         'unused-imports',
         'jsx-a11y',
-        'prettier'
+        'prettier',
     ],
     parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
         ecmaFeatures: {
-            jsx: true
-        }
+            jsx: true,
+        },
+        project: "./tsconfig.json"
     },
     overrides: [
         {
@@ -52,7 +65,7 @@ const config = {
         'react-refresh/only-export-components': [
             'warn',
             {
-                allowConstantExport: true
+                allowConstantExport: true,
             },
         ],
         'prettier/prettier': 'error',
@@ -82,6 +95,6 @@ const config = {
             },
         ],
     },
-}
+};
 
 module.exports = config;

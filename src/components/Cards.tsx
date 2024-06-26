@@ -1,7 +1,8 @@
+import { MouseEventHandler } from 'react';
+
 import clsx from 'clsx';
 
-import { Button } from './Button';
-import { MouseEventHandler } from 'react';
+import { Button } from '@homework-task/components/Button';
 
 type Card = {
     title: string;

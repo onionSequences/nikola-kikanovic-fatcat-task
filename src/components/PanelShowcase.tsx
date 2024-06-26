@@ -1,4 +1,4 @@
-import { Item } from '../lib/shared/types';
+import { Item } from '@homework-task/lib/shared/types';
 
 type PanelShowcaseProps = {
     items: Item[];

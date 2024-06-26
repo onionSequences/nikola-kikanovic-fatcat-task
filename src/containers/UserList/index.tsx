@@ -1,7 +1,7 @@
-import List from '../../components/List';
-import { useUsers } from './hooks/useUsers';
-import { User } from './types';
-import { Layout } from '../../components/Layout';
+import { Layout } from '@homework-task/components/Layout';
+import List from '@homework-task/components/List';
+import { useUsers } from '@homework-task/containers/UserList/hooks/useUsers';
+import { User } from '@homework-task/containers/UserList/types';
 
 export const UserList = () => {
     const { users, isLoading, isError } = useUsers();
@@ -16,7 +16,7 @@ export const UserList = () => {
     return (
         <Layout background={'bg-cream'}>
             <h1 className="leading-normal text-3xl mb-10 xl:text-5xl xl:leading-normal text-black">
-                Meet Our <span className="text-primary">Fat Cat's</span>
+                Meet Our <span className="text-primary">Fat Cat&apos;s</span>
             </h1>
             <List
                 id="id"

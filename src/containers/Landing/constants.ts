@@ -1,4 +1,4 @@
-import { CardItem } from './components/Card';
+import { CardItem } from '@homework-task/containers/Landing/components/Card';
 
 export const vscodeProjectLink = `vscode://file/${__CWD__}`;
 

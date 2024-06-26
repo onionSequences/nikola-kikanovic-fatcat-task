@@ -1,16 +1,12 @@
-import React from 'react';
+import { ReactNode } from 'react';
 
 interface ListProps<T> {
     data: T[];
-    renderItem: (item: T) => React.ReactNode;
+    renderItem: (item: T) => ReactNode;
     id: keyof T;
 }
 
-const List = <T,>({
-    data,
-    renderItem,
-    id,
-}: ListProps<T>): React.ReactElement => {
+const List = <T,>({ data, renderItem, id }: ListProps<T>) => {
     return (
         <ul className="col-span-full grid gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
             {data.map((item, index) => {

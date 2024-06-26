@@ -1,5 +1,6 @@
-import clsx from 'clsx';
 import { MouseEventHandler, ReactNode } from 'react';
+
+import clsx from 'clsx';
 
 export type ButtonProps = {
     children: ReactNode;

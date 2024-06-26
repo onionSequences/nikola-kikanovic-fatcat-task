@@ -1,13 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
-import { User } from '../types';
-import { getRandomNumber } from './helpers/getRandomNumber';
+
+import { getRandomNumber } from '@homework-task/containers/UserList/hooks/helpers/getRandomNumber';
+import { User } from '@homework-task/containers/UserList/types';
 
 const getUsers = async (): Promise<User[]> => {
     const response = await fetch(import.meta.env.VITE_USERS_API);
     if (!response.ok) {
         throw new Error('Network response was not ok');
     }
-    return response.json();
+    return (await response.json()) as Promise<User[]>;
 };
 
 export const useUsers = () => {
