@@ -7,5 +7,9 @@ type LayoutProps = {
 };
 
 export const Layout = ({ children, background }: LayoutProps) => {
-    return <section className={clsx('py-20', background)}>{children}</section>;
+    return (
+        <section className={clsx('min-h-screen p-8 sm:p-16', background)}>
+            {children}
+        </section>
+    );
 };
