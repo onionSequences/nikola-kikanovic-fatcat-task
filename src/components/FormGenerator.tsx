@@ -61,7 +61,10 @@ const FormGenerator = <T extends FieldValues>({
 
     return (
         <form
-            onSubmit={handleSubmit(onSubmit)}
+            onSubmit={(e) => {
+                e.preventDefault();
+                void handleSubmit(onSubmit)();
+            }}
             className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-md"
         >
             {renderForm({ control, errors })}
