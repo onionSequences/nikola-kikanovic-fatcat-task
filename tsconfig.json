@@ -20,6 +20,9 @@
         "esModuleInterop": true,
         "noEmit": true,
         "jsx": "react-jsx",
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
 
         /* Linting */
         "strict": true,
