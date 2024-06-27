@@ -1,6 +1,6 @@
 import { Item } from '@homework-task/lib/shared/types';
 
-type HeroProps = Omit<Item, 'description'>;
+export type HeroProps = Omit<Item, 'description'>;
 
 export const Hero = ({ title, image }: HeroProps) => {
     return (

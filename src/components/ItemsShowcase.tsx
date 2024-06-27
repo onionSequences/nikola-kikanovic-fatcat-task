@@ -1,6 +1,6 @@
 import { Item } from '@homework-task/lib/shared/types';
 
-type ItemsShowcaseProps = {
+export type ItemsShowcaseProps = {
     items: Item[];
 };
 
